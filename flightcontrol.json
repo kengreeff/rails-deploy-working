@@ -25,14 +25,6 @@
             "installCommand": "bundle install && rails db:migrate",
             "dockerfilePath": "Dockerfile",
             "dockerContext": ".",
-            "envVariables": {
-              "RAILS_ENV": {
-                "fromParameterStore": "RAILS_ENV"
-              },
-              "RAILS_MASTER_KEY": {
-                "fromParameterStore": "RAILS_MASTER_KEY"
-              }
-            },
             "autoscaling": {
               "cpuThreshold": 70,
               "memoryThreshold": 70,
@@ -54,14 +46,6 @@
             "memory": 0.5,
             "minInstances": 1,
             "maxInstances": 1,
-            "envVariables": {
-              "RAILS_ENV": {
-                "fromParameterStore": "RAILS_ENV"
-              },
-              "RAILS_MASTER_KEY": {
-                "fromParameterStore": "RAILS_MASTER_KEY"
-              }
-            },
             "startCommand": "bundle exec sidekiq"
           },
           {
