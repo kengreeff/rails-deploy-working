@@ -58,7 +58,7 @@
             "maxStorage": 100,
             "autoUpgradeMinorVersions": true,
             "applyChangesImmediately": false,
-            "deletionProtection": false,
+            "deletionProtection": true,
             "connectionStringEnvVarName": "DATABASE_URL",
             "engine": "postgres",
             "engineVersion": "15",
