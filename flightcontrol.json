@@ -23,6 +23,7 @@
             "versionHistoryCount": 10,
             "basePath": ".",
             "installCommand": "bundle install && rails db:migrate",
+            "buildCommand": "bundle exec rails db:migrate && bundle exec rake assets:precompile",
             "dockerfilePath": "Dockerfile",
             "dockerContext": ".",
             "autoscaling": {
